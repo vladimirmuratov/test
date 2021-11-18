@@ -1,4 +1,4 @@
-
+import "./style.css";
 
 createContainer()
 
@@ -19,7 +19,9 @@ function createContainer() {
     const form = createForm()
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-        inputValue.textContent = `Вы ввели: ${document.querySelector("input[name='input']").value}`
+        const input = document.querySelector("input[name='input']")
+        inputValue.textContent = `Вы ввели: ${input.value}`
+        input.value = ''
     })
 
     const inputValue = document.createElement('span')
