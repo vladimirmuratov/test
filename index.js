@@ -22,7 +22,8 @@ function createContainer() {
         inputValue.textContent = `Вы ввели: ${document.querySelector("input[name='input']").value}`
     })
 
-    const inputValue = document.createElement('p')
+    const inputValue = document.createElement('span')
+    inputValue.className = 'inputValue'
 
     container.prepend(inputValue)
     container.prepend(form)
