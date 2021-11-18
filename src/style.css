@@ -5,7 +5,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-#container{
+#container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -27,6 +27,10 @@ input {
     font-size: 16px;
 }
 
-.inputValue{
+input:focus {
+    outline: none;
+}
+
+.inputValue {
     background: aquamarine;
 }
